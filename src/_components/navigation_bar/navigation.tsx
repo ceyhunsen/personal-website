@@ -1,0 +1,31 @@
+import Link from "next/link";
+import "./navigation.css";
+
+export default function navigationPane() {
+  return (
+    <nav>
+      <div>
+        <Link id="logo" href="/">
+          Ceyhun Şen
+        </Link>
+      </div>
+
+      <div>
+        <Link href="/technical-writings">Technical Writings</Link>
+        <br />
+        <Link href="/travel-logs">Travel Logs</Link>
+        <br />
+        <Link href="/blog">Blog</Link>
+        <br />
+        <Link href="/about">About</Link>
+        <br />
+      </div>
+
+      <div>
+        <a id="resume" href="/assets/ceyhun_sen_resume.pdf" target="_blank">
+          Resume
+        </a>
+      </div>
+    </nav>
+  );
+}
