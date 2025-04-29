@@ -8,6 +8,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
       - name: Prerequisites
         uses: ./.github/actions/build-prerequisites
       - name: Build with Next.js
@@ -17,6 +19,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
       - name: Prerequisites
         uses: ./.github/actions/build-prerequisites
       - name: Lint
@@ -26,6 +30,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
       - name: Prerequisites
         uses: ./.github/actions/build-prerequisites
       - name: Check for unused dependencies
