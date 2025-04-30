@@ -17,7 +17,7 @@ export default function Home() {
 
       <article>
         <p>
-          I am Ceyhun: A computer engineer, a motorcyclist and a traveller based
+          I am Ceyhun: A computer engineer, a motorcyclist and a traveler based
           in İstanbul/Türkiye.
         </p>
 
@@ -26,7 +26,9 @@ export default function Home() {
           knowledge/portfolio, travel experiences and other kinds of personal
           stuff. To know more about me, you can check out the{" "}
           <a href="/about">about me</a> page or{" "}
-          <a href="/ceyhun_sen_resume.pdf">my resume</a>.
+          <a href="/ceyhun_sen_resume.pdf">my resume</a>. You can also check out
+          my <a href="/blog">blog</a> for my thoughts and experiences, or{" "}
+          <a href="/travel-logs">travel logs</a> for my travel experiences.
         </p>
 
         <h2>Highlighted Posts</h2>
