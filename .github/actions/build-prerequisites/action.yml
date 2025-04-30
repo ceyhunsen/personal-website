@@ -1,0 +1,25 @@
+name: Build Prerequisites
+description: "Setup everything needed to build the project"
+
+runs:
+  using: "composite"
+
+  steps:
+    - name: Setup Node
+      uses: actions/setup-node@v4
+      with:
+        node-version: "20"
+        cache: npm
+    - name: Restore cache
+      uses: actions/cache@v4
+      with:
+        path: |
+          .next/cache
+        # Generate a new cache whenever packages or source files change.
+        key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
+        # If source files changed but packages didn't, rebuild from a prior cache.
+        restore-keys: |
+          ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-
+    - name: Install dependencies
+      shell: bash
+      run: npm ci

@@ -1,0 +1,40 @@
+name: Checks
+
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Prerequisites
+        uses: ./.github/actions/build-prerequisites
+      - name: Build with Next.js
+        run: npx --no-install next build
+
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Prerequisites
+        uses: ./.github/actions/build-prerequisites
+      - name: Lint
+        run: npm run lint
+
+  unused-dependencies:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Prerequisites
+        uses: ./.github/actions/build-prerequisites
+      - name: Install depcheck
+        run: npm install -g depcheck
+      - name: Check for unused dependencies
+        run: npx --no-install depcheck --ignores eslint,eslint-config-next,typescript,@types/react
