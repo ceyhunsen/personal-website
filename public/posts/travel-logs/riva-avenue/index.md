@@ -31,7 +31,7 @@ Even though it is not long nor spectacular, motorcyclist in Istanbul likes this
 route because it is so close to city and won't take long to finish. Hell, even
 one day, I rode this route 1 hour earlier before a meetup with my friends.
 
-![Part of the route](/posts/travel-logs/riva_avenue/route_1.gif)
+![Part of the route](/posts/travel-logs/riva-avenue/route_1.gif)
 
 ## Riva Itself
 
@@ -41,13 +41,13 @@ a mosque, blocking the way and forcing you to go right of it. I know my wording
 sounded quite aggressive but it feels good good and unique. After you pass the
 mosque, you can pretty much see the district center.
 
-![District center](/posts/travel-logs/riva_avenue/20240412_142604.jpg)
+![District center](/posts/travel-logs/riva-avenue/20240412_142604.jpg)
 
 I won't lie: Views are mediocre. But is acceptable for a quick ride. And I
 generally rest on the same spot, after a ride.
 
-![The view from my favorite spot](/posts/travel-logs/riva_avenue/20241012_140446.jpg)
+![The view from my favorite spot](/posts/travel-logs/riva-avenue/20241012_140446.jpg)
 
 Don't forget to visit parks and restaurants if you happened to be there.
 
-![Empty houses at my left and nice wall at my right](/posts/travel-logs/riva_avenue/houses_to_the_left.gif)
+![Empty houses at my left and nice wall at my right](/posts/travel-logs/riva-avenue/houses_to_the_left.gif)
