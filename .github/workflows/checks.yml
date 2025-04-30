@@ -37,4 +37,4 @@ jobs:
       - name: Install depcheck
         run: npm install -g depcheck
       - name: Check for unused dependencies
-        run: npx --no-install depcheck
+        run: npx --no-install depcheck --ignores eslint,eslint-config-next,typescript,@types/react
