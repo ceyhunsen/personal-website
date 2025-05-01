@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Index() {
   return (
     <div>
@@ -27,13 +29,14 @@ export default function Index() {
           I also share some of my hobbies here, in this website. I ride my
           motorcycle and take pictures of the sceneries I see on the way. These
           pictures and some of the cool routes I discover are shared in my{" "}
-          <a href="/travel-logs/">travel logs</a>.
+          <Link href="/travel-logs">travel logs</Link>.
         </p>
 
         <p>
-          I sometimes write <a href="/technical-articles">technical articles</a>{" "}
-          about my hobbies and work. I also share other miscellaneous topics and
-          thoughts on <a href="blog/">my blog</a>.
+          I sometimes write{" "}
+          <Link href="/technical-articles">technical articles</Link> about my
+          hobbies and work. I also share other miscellaneous topics and thoughts
+          on <Link href="/blog">my blog</Link>.
         </p>
       </article>
     </div>

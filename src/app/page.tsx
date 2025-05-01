@@ -1,5 +1,6 @@
 import { PostItem } from "@/_components/posts/item";
 import { getPostByCategory } from "@/_components/posts/read";
+import Link from "next/link";
 
 export default function Home() {
   const highlightedPosts = [
@@ -25,10 +26,11 @@ export default function Home() {
           This is my personal website. Here, I share my technical
           knowledge/portfolio, travel experiences and other kinds of personal
           stuff. To know more about me, you can check out the{" "}
-          <a href="/about">about me</a> page or{" "}
+          <Link href="/about">about me</Link> page or{" "}
           <a href="/ceyhun_sen_resume.pdf">my resume</a>. You can also check out
-          my <a href="/blog">blog</a> for my thoughts and experiences, or{" "}
-          <a href="/travel-logs">travel logs</a> for my travel experiences.
+          my <Link href="/blog">blog</Link> for my thoughts and experiences, or{" "}
+          <Link href="/travel-logs">travel logs</Link> for my travel
+          experiences.
         </p>
 
         <h2>Highlighted Posts</h2>
