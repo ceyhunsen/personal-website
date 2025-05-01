@@ -29,11 +29,7 @@ export default function Index() {
           I also share some of my hobbies here, in this website. I ride my
           motorcycle and take pictures of the sceneries I see on the way. These
           pictures and some of the cool routes I discover are shared in my{" "}
-          <Link href="/travel-logs">travel logs</Link>.
-        </p>
-
-        <p>
-          I sometimes write{" "}
+          <Link href="/travel-logs">travel logs</Link>. I sometimes write{" "}
           <Link href="/technical-articles">technical articles</Link> about my
           hobbies and work. I also share other miscellaneous topics and thoughts
           on <Link href="/blog">my blog</Link>.
