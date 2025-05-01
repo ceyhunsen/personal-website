@@ -11,69 +11,85 @@ import { join } from "path";
 import "./posts.css";
 
 /**
- * A post's structure.
+ * A post's content and metadata.
  */
 export interface Post {
+  /** File name of the post */
   name: string;
+  /** Display title of the post */
   title: string;
-  category: string;
-  date: string;
-  cover?: string;
+
+  /** Short description of the post */
   description: string;
+  /** Release date of the post */
+  date: string;
+  /** Category of the post */
+  category: string;
+
+  /** (Optional) Cover image of the post */
+  cover?: string;
+  /** (Optional) Tags of the post */
   tags?: string[];
+
+  /** Actual content of the post */
   content: string;
-  preview?: boolean;
 }
 
 /**
- * Returns the directory path for the given post category.
+ * @description Get the directory for the given post category.
  *
- * @param category The category of the posts (also the directory).
+ * @param category Category name.
  *
- * @returns Absolute directory path for the posts in the given category.
+ * @returns Absolute (relative to project root) directory for the given category.
  */
-function getDirectory(category: string): string {
+function getCategoryDirectory(category: string): string {
   return join(process.cwd(), "/public/posts/" + category);
 }
 
 /**
- * Returns the post details.
+ * @description Get a post's content and metadata.
  *
- * @param category The category of the post.
- * @param post The name of the post file.
+ * A post must have an `index.md` file in its directory. E.g.:
+ * `/public/posts/blog/my-post/index.md`
  *
- * @returns The post details including title, date, cover image, description, and content.
+ * @param category Category of the post.
+ * @param name Name of the post file.
+ *
+ * @returns Post's content and metadata.
  */
-export function getPostByCategory(category: string, post: string) {
-  const postsDirectory = getDirectory(category);
+export function getPostByCategory(category: string, name: string): Post {
+  // Get path to index.md.
+  const postDirectory = getCategoryDirectory(category);
+  const pathToIndex = join(postDirectory, `${name}/index.md`);
 
-  const strippedPostName = post.replace(/\.md$/, "");
-  const fullPath = join(postsDirectory, `${strippedPostName}/index.md`);
-
-  const fileContents = fs.readFileSync(fullPath, "utf8");
+  // Read its content and metadata.
+  const fileContents = fs.readFileSync(pathToIndex, "utf8");
   const { data, content } = matter(fileContents);
 
   return {
-    ...data,
-    name: strippedPostName,
+    name,
     content,
-    category: category,
+    category,
+    ...data,
   } as Post;
 }
 
 /**
- * Returns all posts in a category.
+ * @description Get all posts in a category.
+ *
+ * @param category Category of the posts.
+ *
+ * @returns Contents and metadata of all the posts in the category.
  */
-export function getAllPosts(folder: string): Post[] {
-  const postsDirectory = getDirectory(folder);
+export function getAllPostsByCategory(category: string): Post[] {
+  // Get all the post names in the category.
+  const postsDirectory = getCategoryDirectory(category);
   const postNames = fs.readdirSync(postsDirectory);
 
-  // Get all posts and sort them by date in descending order.
-  const posts = postNames
-    .map((postName) => getPostByCategory(folder, postName))
+  // Read all the posts and sort them by date in descending order.
+  return postNames
+    .map((postName) => getPostByCategory(category, postName))
     .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
-
-  return posts;
 }
 
 /**
@@ -89,7 +105,7 @@ export function ListPostItems({
   category: string;
   title: string;
 }) {
-  const allPosts = getAllPosts(category);
+  const allPosts = getAllPostsByCategory(category);
 
   return (
     <div>
