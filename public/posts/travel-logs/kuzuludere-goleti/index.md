@@ -8,7 +8,7 @@ last-visit: 2024-09-29
 
 Kuzuludere Göleti (pond) was quite the stunner for me. It is located at Yalıköy
 district, which is in Çatalca/İstanbul. This pond is great for spending some
-alone time (reading books, enjoying the view...) and picnicing.
+alone time (reading books, enjoying the view...) and picnicking.
 
 I went to Yalıköy multiple times to visit it's beach. But I am grateful, that
 one day, I decided to explore the district and not just sit next to the beach.
@@ -33,17 +33,17 @@ was no running water through, though. So I took a quick walk on top of the dam.
 It wasn't crazy high but still was a bit scary to walk on top of it. You could
 see the whole lake but not the whole place from there.
 
-![Panaromic view from dam](/posts/travel-logs/kuzuludere-goleti/20240929_153944.jpg)
+![Panoramic view from dam](/posts/travel-logs/kuzuludere-goleti/20240929_153944.jpg)
 
-There were some people picnicing near the entrance. Because the place is quite
+There were some people picnicking near the entrance. Because the place is quite
 far away from anything, the amount of people were very low for a place this.
 Also most of them were at the entrance, near the dam. But the road was looking quite
-long so I decided to ride more and rest on a place that is more seperated from
+long so I decided to ride more and rest on a place that is more separated from
 people. On my way, I saw a cool tent. It looked like a futuristic base on an
 icelandic themed film/video game (First thought was Death Stranding). The moment
 I saw that tent defined this place for me honestly.
 
-![Not so futurustic tent](/posts/travel-logs/kuzuludere-goleti/20240929_170532.jpg)
+![Not so futuristic tent](/posts/travel-logs/kuzuludere-goleti/20240929_170532.jpg)
 
 Road took me to the biggest plain part of this pond area. This plains felt like
 this place gets filled with more water on rainy seasons. Because there were a
@@ -65,7 +65,7 @@ was also nice.
 
 ![Path](/posts/travel-logs/kuzuludere-goleti/20240929_165941.jpg)
 
-By the time I decided to leave the place, I had visitors: Cows. Sheperds were
+By the time I decided to leave the place, I had visitors: Cows. Shepherds were
 using this place to graze them. Some of them got scared by me, most of them
 didn't.
 
