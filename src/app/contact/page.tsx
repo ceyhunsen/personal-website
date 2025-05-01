@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 export default function Index() {
   return (
     <div>
@@ -8,6 +6,7 @@ export default function Index() {
       </header>
 
       <article>
+        <h1>Primary Contact Information</h1>
         <ul>
           <li>
             E-mail:{" "}
@@ -22,21 +21,29 @@ export default function Index() {
             </a>
           </li>
           <li>
+            Telegram:{" "}
+            <a href="https://t.me/CeyhunSen" target="_blank">
+              t.me/CeyhunSen
+            </a>
+          </li>
+        </ul>
+
+        <h1>Portfolio</h1>
+        <ul>
+          <li>
             Github:{" "}
             <a href="https://github.com/ceyhunsen/" target="_blank">
               github.com/ceyhunsen
             </a>
           </li>
+        </ul>
+
+        <h1>Social Media</h1>
+        <ul>
           <li>
             Instagram:{" "}
             <a href="https://www.instagram.com/ceyhusen/" target="_blank">
               instagram.com/ceyhusen
-            </a>
-          </li>
-          <li>
-            X:{" "}
-            <a href="https://x.com/ceyhusen/" target="_blank">
-              x.com/ceyhusen
             </a>
           </li>
           <li>
@@ -51,6 +58,16 @@ export default function Index() {
               reddit.com/user/cleyclun
             </a>
           </li>
+          <li>
+            X:{" "}
+            <a href="https://x.com/ceyhusen/" target="_blank">
+              x.com/ceyhusen
+            </a>
+          </li>
+        </ul>
+
+        <h1>Other</h1>
+        <ul>
           <li>
             Spotify:{" "}
             <a
