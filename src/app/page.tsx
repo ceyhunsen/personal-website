@@ -1,5 +1,5 @@
-import { PostItem } from "@/_components/posts/item";
-import { getPostByCategory } from "@/_components/posts/read";
+import { PostItem } from "@/_components/posts/listing";
+import { getPostByCategory } from "@/_components/posts/listing";
 import Link from "next/link";
 
 export default function Home() {

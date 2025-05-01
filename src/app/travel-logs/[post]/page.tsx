@@ -1,4 +1,4 @@
-import { getAllPosts, getPostByCategory } from "@/_components/posts/read";
+import { getAllPosts, getPostByCategory } from "@/_components/posts/listing";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import "@/_components/posts/posts.css";

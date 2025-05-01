@@ -4,7 +4,7 @@
  */
 
 import "@/_components/posts/posts.css";
-import { Post } from "@/_components/posts/read";
+import { Post } from "@/_components/posts/listing";
 import rehypeStringify from "rehype-stringify";
 import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";

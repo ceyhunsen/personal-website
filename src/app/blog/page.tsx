@@ -1,4 +1,4 @@
-import { ListPostItems } from "@/_components/posts/item";
+import { ListPostItems } from "@/_components/posts/listing";
 
 export default function Index() {
   return <ListPostItems category="blog" title="Blog" />;
