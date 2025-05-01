@@ -19,6 +19,8 @@ export default function navigationPane() {
         <br />
         <Link href="/about">About</Link>
         <br />
+        <Link href="/contact">Contact</Link>
+        <br />
       </div>
 
       <div>
