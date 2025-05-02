@@ -2,7 +2,7 @@
 title: Kuzuludere Göleti (Pond)
 date: 2024/09/29
 cover: 20240929_153503.jpg
-tags: spot
+tags: ["spot"]
 last-visit: 2024-09-29
 ---
 
@@ -15,10 +15,11 @@ one day, I decided to explore the district and not just sit next to the beach.
 
 ![View of the pond from the dam nearby](/posts/travel-logs/kuzuludere-goleti/20240929_153503.jpg)
 
-I suggest listening Blood Like Lemonade from Morcheeba, while reading this. This
-is the song that describes my vibe on this place.
+I suggest listening
+[Blood Like Lemonade from Morcheeba](https://open.spotify.com/track/6V472EZ0ymkw3zEDOqlIew?si=1b5e73cf3ac545af),
+while reading this. This is the song that describes my vibe on this place.
 
-<div class="iframeWrapper">
+<!-- <div class="iframeWrapper">
 <iframe
   src="https://open.spotify.com/embed/track/6V472EZ0ymkw3zEDOqlIew?utm_source=generator"
   frameBorder="0"
@@ -26,9 +27,9 @@ is the song that describes my vibe on this place.
   allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
   loading="lazy">
 </iframe>
-</div>
+</div> -->
 
-There is a small dam nearby the pond. When I visited here in september, there
+There is a small dam nearby the pond. When I visited here in September, there
 was no running water through, though. So I took a quick walk on top of the dam.
 It wasn't crazy high but still was a bit scary to walk on top of it. You could
 see the whole lake but not the whole place from there.

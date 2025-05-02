@@ -1,5 +1,5 @@
-import { PostItem } from "@/_components/posts/listing";
-import { getPostByCategory } from "@/_components/posts/listing";
+import { PostBox } from "@/_components/posts";
+import { getPostByCategory } from "@/_components/posts";
 import Link from "next/link";
 
 export default function Home() {
@@ -36,7 +36,7 @@ export default function Home() {
         <h2>Highlighted Posts</h2>
 
         {highlightedPosts.map((post) => (
-          <PostItem post={post} key={post.title} />
+          <PostBox post={post} key={post.title} />
         ))}
       </article>
     </div>

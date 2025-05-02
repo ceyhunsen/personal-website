@@ -2,7 +2,7 @@
 title: Riva Avenue
 date: 2024/04/12
 cover: 20241012_140446.jpg
-tags: route spot
+tags: ["route", "spot"]
 last-visit: 2024-12-14
 been-here: countless
 ---
@@ -13,7 +13,7 @@ some high speed cornering with an OK view. Still, this road is special to me
 because it was my first countryside route with my first ever motorcycle. After
 that day, I fell in love with riding in countryside.
 
-<div class="iframeWrapper">
+<!-- <div class="iframeWrapper">
 <iframe
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24011.344050173775!2d29.214454692103907!3d41.212660386055504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x409fdbf9b1963ced%3A0xd1c80e711ea86b99!2sRiva%20Cd.%2C%20Beykoz%2F%C4%B0stanbul!5e0!3m2!1str!2str!4v1734275129572!5m2!1str!2str"
     style="border:0;"
@@ -21,7 +21,7 @@ that day, I fell in love with riding in countryside.
     loading="lazy"
     referrerpolicy="no-referrer-when-downgrade">
 </iframe>
-</div>
+</div> -->
 
 It only has handful amount of high speed corners and no low speed corners. Also,
 corners are quite easy to take, I would say. As you can guess, it is not long to

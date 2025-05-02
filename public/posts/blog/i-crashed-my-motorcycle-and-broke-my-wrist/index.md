@@ -6,7 +6,7 @@ cover: 20250118_161357.jpg
 ---
 
 As I was closing my first year anniversary riding motorcycles, I crashed, on my
-own. It was a sunny saturday which the dates were showing 18th of January, 2025
+own. It was a sunny Saturday which the dates were showing 18th of January, 2025
 and the clocks were pointing to 16:10. I couldn't slow down to a corner and went
 straight outside the twisties, in to the bushes. After I mowed the bushes, hit
 the little trees and than came to a stop. I was very fortunate to not hit
@@ -18,7 +18,7 @@ hit my left wrist to a tree and broke it.
 ## Why and How Did I Crashed?
 
 I wasn't speeding at that moment; Was a chill ride with no destination. Even
-though it was a cold day (10 Celcius), road and tire conditions were OK. But I
+though it was a cold day (10 Celsius), road and tire conditions were OK. But I
 wasn't paying attention to the road and this was the main problem. I was very
 absent-minded about my personal matters for couple of days. While thinking about
 them, I wasn't paying attention to road. Because it was also cold, my hands were
@@ -28,8 +28,8 @@ that sharp turn.
 
 When I noticed I couldn't slow down enough, I got surprised. I thought to myself
 "What is going on at this very moment? Why am I in it?". It was incredibly fast.
-I couldn't do anything and just freezed. I don't really remember the moment I
-hit the trees even though I was concious all the time.
+I couldn't do anything and just freeze. I don't really remember the moment I
+hit the trees even though I was conscious all the time.
 
 ![Corner that I went straight to the right and crashed](/posts/blog/i-crashed-my-motorcycle-and-broke-my-wrist/corner_that_i_crashed.gif)
 
@@ -54,7 +54,7 @@ lift anything. Also the shape of it was looking funny.
 
 ![First moment I saw my broken wrist](/posts/blog/i-crashed-my-motorcycle-and-broke-my-wrist/funny_looking_wrist.png)
 
-There were only a little bit of pain that my body signalling me about something
+There were only a little bit of pain that my body signaling me about something
 was wrong. But I wouldn't say it was really that painful. I can't say the same
 thing about the relocation process, though. Operation was done by a doctor, a
 technician and my dad (yes they wanted help from him). Glad it only took 10-20

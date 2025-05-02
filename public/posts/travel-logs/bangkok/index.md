@@ -2,7 +2,7 @@
 title: Bangkok
 date: 2024/11/02
 cover: skyscrapers/20241115_171924.jpg
-tags: trip
+tags: ["trip"]
 last-visit: 2024-11-02
 ---
 

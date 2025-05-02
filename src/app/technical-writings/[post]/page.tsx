@@ -1,8 +1,7 @@
-import { getAllPosts, getPostByCategory } from "@/_components/posts/listing";
+import { getAllPostsByCategory, getPostByCategory } from "@/_components/posts";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
-import "@/_components/posts/posts.css";
-import { PostContent } from "@/_components/posts/page";
+import { PostContent } from "@/_components/posts";
 
 const category = "technical-writings";
 
@@ -40,7 +39,7 @@ export async function generateMetadata(props: Params): Promise<Metadata> {
 }
 
 export async function generateStaticParams() {
-  const posts = getAllPosts(category);
+  const posts = getAllPostsByCategory(category);
 
   return posts.map((post) => ({
     post: post.name,

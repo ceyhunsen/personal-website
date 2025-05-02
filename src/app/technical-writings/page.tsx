@@ -1,7 +1,10 @@
-import { ListPostItems } from "@/_components/posts/listing";
+import { ListPostsByCategory } from "@/_components/posts";
 
 export default function Index() {
   return (
-    <ListPostItems category="technical-writings" title="Technical Writings" />
+    <ListPostsByCategory
+      category="technical-writings"
+      category_title="Technical Writings"
+    />
   );
 }

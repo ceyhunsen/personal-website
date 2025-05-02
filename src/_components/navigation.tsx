@@ -1,5 +1,5 @@
 import Link from "next/link";
-import "./navigation.css";
+import "@/_components/css/navigation.css";
 
 export default function navigationPane() {
   return (

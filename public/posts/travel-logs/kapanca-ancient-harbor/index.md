@@ -2,7 +2,7 @@
 title: Kapanca Ancient Harbor
 date: 2024/06/29
 cover: kapanca_ancient_harbor.jpg
-tags: trip
+tags: ["trip"]
 last-visit: 2024-06-29
 ---
 
