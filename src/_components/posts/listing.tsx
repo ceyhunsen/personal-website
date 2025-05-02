@@ -9,6 +9,11 @@ import fs from "fs";
 import matter from "gray-matter";
 import { join } from "path";
 import "./posts.css";
+import "@/_components/posts/posts.css";
+import rehypeStringify from "rehype-stringify";
+import remarkParse from "remark-parse";
+import remarkRehype from "remark-rehype";
+import { unified } from "unified";
 
 /**
  * @description A post's content and metadata.
@@ -158,6 +163,35 @@ export function PostBox({ post }: { post: Post }) {
 
         {post.description && <p className="description">{post.description}</p>}
       </a>
+    </div>
+  );
+}
+
+/**
+ * @description Component for displaying a post's content and metadata.
+ *
+ * @param post Post content and metadata.
+ *
+ * @returns Post page content.
+ */
+export async function PostContent(post: Post) {
+  const processedContent = await unified()
+    .use(remarkParse)
+    .use(remarkRehype)
+    .use(rehypeStringify)
+    .process(post.content);
+  const htmlContent = processedContent.toString();
+
+  return (
+    <div>
+      <header>
+        <h1>{post.title}</h1>
+        <div className="date">
+          <time>{post.date}</time>
+        </div>
+      </header>
+
+      <article dangerouslySetInnerHTML={{ __html: htmlContent }}></article>
     </div>
   );
 }
