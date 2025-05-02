@@ -130,6 +130,8 @@ export function ListPostsByCategory({
  * @returns Post box with metadata.
  */
 export function PostItem({ post }: { post: Post }) {
+  const tags: string[] = Array.isArray(post.tags) ? post.tags : [];
+
   return (
     <div className="box">
       <a href={"/" + post.category + "/" + post.name}>
@@ -146,15 +148,16 @@ export function PostItem({ post }: { post: Post }) {
           <time>{post.date}</time>
         </div>
 
-        {/* {post.tags && (
-          <div className="tags">
-            {postTags.map((postTag) => (
-              <span key={postTag} className="tag">
-                {postTag}
-              </span>
-            ))}
-          </div>
-        )} */}
+        {tags.length > 0 &&
+          tags.map((tag) => {
+            return (
+              <div className="tag_box">
+                <span key={tag} className="tag">
+                  {tag}
+                </span>
+              </div>
+            );
+          })}
 
         <p className="description">{post.description}</p>
       </a>

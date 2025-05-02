@@ -23,7 +23,7 @@ div.box:hover h2.title {
 	text-decoration: underline;
 }
 
-p.description, div.date, div.tags {
+p.description, div.date, div.tag_box {
 	color: var(--font-second);
 	text-align: left;
 }
@@ -31,11 +31,12 @@ p.description, div.date, div.tags {
 div.date {
 	font-style: italic;
 	text-align: left;
+	margin-bottom: 1rem;
 }
 
-div.box div.tags {
+div.box div.tag_box {
 	margin-bottom: 1rem;
-	display: flex;
+	display: inline-flex;
 	align-items: center;
 	padding: 0.1rem 0.5rem;
 	border: 0.1rem solid var(--font-second);
@@ -43,4 +44,5 @@ div.box div.tags {
 	border-radius: 5px;
 	background-color: var(--background-second);
 	color: var(--font-second);
+	width: auto;
 }
