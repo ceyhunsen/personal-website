@@ -11,27 +11,28 @@ import { join } from "path";
 import "./posts.css";
 
 /**
- * A post's content and metadata.
+ * @description A post's content and metadata.
+ *
+ * @argument name File name of the post.
+ * @argument title Display title of the post.
+ * @argument description [Optional] Short description of the post.
+ * @argument date Release date of the post.
+ * @argument category Category of the post.
+ * @argument cover [Optional] Cover image of the post.
+ * @argument tags [Optional] Tags of the post.
+ * @argument content Actual content of the post.
  */
 export interface Post {
-  /** File name of the post */
   name: string;
-  /** Display title of the post */
   title: string;
 
-  /** Short description of the post */
-  description: string;
-  /** Release date of the post */
   date: string;
-  /** Category of the post */
   category: string;
+  description?: string;
 
-  /** (Optional) Cover image of the post */
   cover?: string;
-  /** (Optional) Tags of the post */
   tags?: string[];
 
-  /** Actual content of the post */
   content: string;
 }
 
@@ -107,7 +108,7 @@ export function ListPostsByCategory({
   category: string;
   category_title: string;
 }) {
-  const allPosts = getAllPostsByCategory(category);
+  const posts = getAllPostsByCategory(category);
 
   return (
     <div>
@@ -115,8 +116,8 @@ export function ListPostsByCategory({
         <h1>{category_title}</h1>
       </header>
 
-      {allPosts.map((post) => (
-        <PostItem post={post} key={post.title} />
+      {posts.map((post) => (
+        <PostBox post={post} key={post.title} />
       ))}
     </div>
   );
@@ -125,13 +126,11 @@ export function ListPostsByCategory({
 /**
  * @description Component for displaying a single post.
  *
- * @param post Post name.
+ * @param post Post metadata.
  *
  * @returns Post box with metadata.
  */
-export function PostItem({ post }: { post: Post }) {
-  const tags: string[] = Array.isArray(post.tags) ? post.tags : [];
-
+export function PostBox({ post }: { post: Post }) {
   return (
     <div className="box">
       <a href={"/" + post.category + "/" + post.name}>
@@ -148,18 +147,16 @@ export function PostItem({ post }: { post: Post }) {
           <time>{post.date}</time>
         </div>
 
-        {tags.length > 0 &&
-          tags.map((tag) => {
+        {post.tags &&
+          post.tags.map((tag) => {
             return (
-              <div className="tag_box">
-                <span key={tag} className="tag">
-                  {tag}
-                </span>
+              <div className="tag_box" key={tag}>
+                <span className="tag">{tag}</span>
               </div>
             );
           })}
 
-        <p className="description">{post.description}</p>
+        {post.description && <p className="description">{post.description}</p>}
       </a>
     </div>
   );
