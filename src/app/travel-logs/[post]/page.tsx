@@ -1,11 +1,7 @@
-import {
-  getAllPostsByCategory,
-  getPostByCategory,
-} from "@/_components/posts/listing";
+import { getAllPostsByCategory, getPostByCategory } from "@/_components/posts";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
-import "@/_components/posts/posts.css";
-import { PostContent } from "@/_components/posts/listing";
+import { PostContent } from "@/_components/posts";
 
 const category = "travel-logs";
 

@@ -8,8 +8,7 @@
 import fs from "fs";
 import matter from "gray-matter";
 import { join } from "path";
-import "./posts.css";
-import "@/_components/posts/posts.css";
+import "@/_components/css/posts.css";
 import rehypeStringify from "rehype-stringify";
 import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";

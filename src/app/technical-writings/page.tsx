@@ -1,4 +1,4 @@
-import { ListPostsByCategory } from "@/_components/posts/listing";
+import { ListPostsByCategory } from "@/_components/posts";
 
 export default function Index() {
   return (

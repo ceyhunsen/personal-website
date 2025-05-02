@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import "../_components/css/global.css";
-import $footer from "@/_components/footer/footer";
-import $navigationPane from "@/_components/navigation_bar/navigation";
+import "@/_components/css/global.css";
+import $footer from "@/_components/footer";
+import $navigationPane from "@/_components/navigation";
 
 export const metadata: Metadata = {
   title: "Ceyhun Şen",

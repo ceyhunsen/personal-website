@@ -1,5 +1,5 @@
-import { PostBox } from "@/_components/posts/listing";
-import { getPostByCategory } from "@/_components/posts/listing";
+import { PostBox } from "@/_components/posts";
+import { getPostByCategory } from "@/_components/posts";
 import Link from "next/link";
 
 export default function Home() {
