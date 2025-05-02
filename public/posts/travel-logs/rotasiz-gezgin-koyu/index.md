@@ -2,7 +2,7 @@
 title: Rotasız Gezgin Koyu
 date: 2024/07/25
 cover: 20240725_192340.jpg
-tags: spot
+tags: ["spot"]
 last-visit: 2025-01-05
 ---
 
