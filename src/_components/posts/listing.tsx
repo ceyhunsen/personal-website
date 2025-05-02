@@ -93,24 +93,26 @@ export function getAllPostsByCategory(category: string): Post[] {
 }
 
 /**
- * Lists all posts in a category.
+ * @description Component for listing posts by theirs category.
  *
- * @param category The category of the posts.
- * @returns A list of post items.
+ * @param category Category of the posts.
+ * @param title Title of the category.
+ *
+ * @returns A list of posts.
  */
-export function ListPostItems({
+export function ListPostsByCategory({
   category,
-  title,
+  category_title,
 }: {
   category: string;
-  title: string;
+  category_title: string;
 }) {
   const allPosts = getAllPostsByCategory(category);
 
   return (
     <div>
       <header>
-        <h1>{title}</h1>
+        <h1>{category_title}</h1>
       </header>
 
       {allPosts.map((post) => (
@@ -121,10 +123,11 @@ export function ListPostItems({
 }
 
 /**
- * Displays a single post item.
+ * @description Component for displaying a single post.
  *
- * @param post The post to display.
- * @returns A link to the post with title, image, description, and date.
+ * @param post Post name.
+ *
+ * @returns Post box with metadata.
  */
 export function PostItem({ post }: { post: Post }) {
   return (

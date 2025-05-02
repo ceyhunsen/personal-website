@@ -1,5 +1,5 @@
-import { ListPostItems } from "@/_components/posts/listing";
+import { ListPostsByCategory } from "@/_components/posts/listing";
 
 export default function Index() {
-  return <ListPostItems category="blog" title="Blog" />;
+  return <ListPostsByCategory category="blog" category_title="Blog" />;
 }
