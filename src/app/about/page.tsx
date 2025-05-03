@@ -1,3 +1,4 @@
+import ImageWithCaption from "@/_components/image";
 import Link from "next/link";
 
 export default function Index() {
@@ -8,10 +9,11 @@ export default function Index() {
       </header>
 
       <article>
-        <img
-          src="/assets/about_me.jpg"
-          alt="A photo of me, staring into a river in Bangkok, Thailand."
+        <ImageWithCaption
+          source="/assets/about_me.jpg"
+          caption="A photo of me, staring into a river in Bangkok, Thailand."
         />
+
         <p>
           I am a computer engineer by profession. I enjoy working on low-level
           software. In college, I was part of a team and took responsibility for
