@@ -17,12 +17,8 @@ export default function ImageWithCaption({
   caption: string;
 }) {
   return (
-    <figure style={{ width: "100%", textAlign: "center", margin: "0" }}>
-      <img
-        src={source}
-        alt={caption}
-        style={{ width: "100%", height: "auto" }}
-      />
+    <figure>
+      <img src={source} alt={caption} />
       <figcaption>{caption}</figcaption>
     </figure>
   );
