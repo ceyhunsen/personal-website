@@ -3,6 +3,8 @@
  * @description Components for handling images.
  */
 
+import Image from "next/image";
+
 /**
  * @description A component that displays an image with a caption.
  *
@@ -18,7 +20,7 @@ export default function ImageWithCaption({
 }) {
   return (
     <figure>
-      <img src={source} alt={caption} />
+      <Image src={source} alt={caption} />
       <figcaption>{caption}</figcaption>
     </figure>
   );

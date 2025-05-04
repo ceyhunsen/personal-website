@@ -14,6 +14,7 @@ import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";
 import { unified } from "unified";
 import { visit } from "unist-util-visit";
+import Image from "next/image";
 
 /**
  * @description A post's content and metadata.
@@ -140,7 +141,7 @@ export function PostBox({ post }: { post: Post }) {
     <div className="box">
       <a href={"/" + post.category + "/" + post.name}>
         {post.cover && (
-          <img
+          <Image
             src={"/posts/" + post.category + "/" + post.name + "/" + post.cover}
             alt={post.title}
           />
