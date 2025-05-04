@@ -203,6 +203,7 @@ export async function PostContent(post: Post) {
  * @returns A transformer function for rehype.
  */
 function transformImageToImageWithCaption() {
+  // eslint-disable-next-line
   return (tree: any) => {
     visit(tree, "element", (node, index, parent) => {
       if (node.tagName === "img") {
