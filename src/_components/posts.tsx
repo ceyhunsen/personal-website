@@ -13,6 +13,7 @@ import rehypeStringify from "rehype-stringify";
 import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";
 import { unified } from "unified";
+import { visit } from "unist-util-visit";
 
 /**
  * @description A post's content and metadata.
@@ -178,6 +179,7 @@ export async function PostContent(post: Post) {
     .use(remarkParse)
     .use(remarkRehype)
     .use(rehypeStringify)
+    .use(transformImageToImageWithCaption)
     .process(post.content);
   const htmlContent = processedContent.toString();
 
@@ -193,4 +195,34 @@ export async function PostContent(post: Post) {
       <article dangerouslySetInnerHTML={{ __html: htmlContent }}></article>
     </div>
   );
+}
+
+/**
+ * @description Transform <img> elements to <figure> with <figcaption>.
+ *
+ * @returns A transformer function for rehype.
+ */
+function transformImageToImageWithCaption() {
+  return (tree: any) => {
+    visit(tree, "element", (node, index, parent) => {
+      if (node.tagName === "img") {
+        parent.tagName = "figure";
+
+        if (node.properties.alt) {
+          const caption = {
+            type: "element",
+            tagName: "figcaption",
+            children: [
+              {
+                type: "text",
+                value: node.properties?.alt || "",
+              },
+            ],
+          };
+
+          parent.children = [node, caption];
+        }
+      }
+    });
+  };
 }
