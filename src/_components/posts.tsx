@@ -205,7 +205,7 @@ export async function PostContent(post: Post) {
 function transformImageToImageWithCaption() {
   // eslint-disable-next-line
   return (tree: any) => {
-    visit(tree, "element", (node, index, parent) => {
+    visit(tree, "element", (node, _, parent) => {
       if (node.tagName === "img") {
         parent.tagName = "figure";
 
