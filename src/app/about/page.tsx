@@ -1,5 +1,6 @@
-import ImageWithCaption from "@/_components/image";
+import { ImageWithCaption } from "@/_components/image";
 import Link from "next/link";
+import about_me_image from "/public/assets/about_me.jpg";
 
 export default function Index() {
   return (
@@ -10,7 +11,7 @@ export default function Index() {
 
       <article>
         <ImageWithCaption
-          source="/assets/about_me.jpg"
+          source={about_me_image}
           caption="A photo of me, staring into a river in Bangkok, Thailand."
         />
 
