@@ -32,8 +32,8 @@ export interface Post {
   name: string;
   title: string;
 
-  date: string;
-  last_visit?: string;
+  date: Date;
+  last_visit?: Date;
   category: string;
   description?: string;
 
@@ -158,12 +158,19 @@ export function PostBox({ post }: { post: Post }) {
 
         {post.last_visit && post.last_visit !== post.date ? (
           <div className="date">
-            <time>Last visit: {post.last_visit}</time> <br />
-            <time>First time visited: {post.date}</time>
+            <time>
+              Last visit:{" "}
+              {new Date(post.last_visit).toLocaleDateString("tr-TR")}
+            </time>
+            <br />
+            <time>
+              First time visited:{" "}
+              {new Date(post.date).toLocaleDateString("tr-TR")}
+            </time>
           </div>
         ) : (
           <div className="date">
-            <time>{post.date}</time>
+            <time>{new Date(post.date).toLocaleDateString("tr-TR")}</time>
           </div>
         )}
 
@@ -204,12 +211,19 @@ export async function PostContent(post: Post) {
         <h1>{post.title}</h1>
         {post.last_visit && post.last_visit !== post.date ? (
           <div className="date">
-            <time>Last visit: {post.last_visit}</time> <br />
-            <time>First time visited: {post.date}</time>
+            <time>
+              Last visit:{" "}
+              {new Date(post.last_visit).toLocaleDateString("tr-TR")}
+            </time>{" "}
+            <br />
+            <time>
+              First time visited:{" "}
+              {new Date(post.date).toLocaleDateString("tr-TR")}
+            </time>
           </div>
         ) : (
           <div className="date">
-            <time>{post.date}</time>
+            <time>{new Date(post.date).toLocaleDateString("tr-TR")}</time>
           </div>
         )}
       </header>
