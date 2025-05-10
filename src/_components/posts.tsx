@@ -156,7 +156,9 @@ export function PostBox({ post }: { post: Post }) {
 
         <h2 className="title">{post.title}</h2>
 
-        {post.last_visit && post.last_visit !== post.date ? (
+        {post.last_visit &&
+        new Date(post.last_visit).toLocaleDateString("tr-TR") !==
+          new Date(post.date).toLocaleDateString("tr-TR") ? (
           <div className="date">
             <time>
               Last visit:{" "}
@@ -209,7 +211,9 @@ export async function PostContent(post: Post) {
     <div>
       <header>
         <h1>{post.title}</h1>
-        {post.last_visit && post.last_visit !== post.date ? (
+        {post.last_visit &&
+        new Date(post.last_visit).toLocaleDateString("tr-TR") !==
+          new Date(post.date).toLocaleDateString("tr-TR") ? (
           <div className="date">
             <time>
               Last visit:{" "}
