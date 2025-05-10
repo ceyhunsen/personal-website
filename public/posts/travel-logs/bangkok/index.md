@@ -29,7 +29,7 @@ people with their own personal cars. This was kind of interesting.
 Last thing about streets is there weren't much of pedestrians to be speak of. I
 and my colleagues were the only pedestrians walking on sidewalks on those busy
 streets, most of time. I don't know if we were almost always hung out on
-touristic areas or people of Bangkok don't really walks. Still, it sometimes
+touristic areas or people of Bangkok don't really walk. Still, it sometimes
 felt like I was in a ghost town with so many cars around.
 
 ![My first picture of the streets of Bangkok](/posts/travel-logs/bangkok/20241102_224023.jpg)
