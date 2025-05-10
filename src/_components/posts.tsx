@@ -15,6 +15,8 @@ import remarkRehype from "remark-rehype";
 import { unified } from "unified";
 import { visit } from "unist-util-visit";
 
+const locale = "tr-TR";
+
 /**
  * @description A post's content and metadata.
  *
@@ -157,22 +159,21 @@ export function PostBox({ post }: { post: Post }) {
         <h2 className="title">{post.title}</h2>
 
         {post.last_visit &&
-        new Date(post.last_visit).toLocaleDateString("tr-TR") !==
-          new Date(post.date).toLocaleDateString("tr-TR") ? (
+        new Date(post.last_visit).toLocaleDateString(locale) !==
+          new Date(post.date).toLocaleDateString(locale) ? (
           <div className="date">
             <time>
-              Last visit:{" "}
-              {new Date(post.last_visit).toLocaleDateString("tr-TR")}
+              Last visit: {new Date(post.last_visit).toLocaleDateString(locale)}
             </time>
             <br />
             <time>
               First time visited:{" "}
-              {new Date(post.date).toLocaleDateString("tr-TR")}
+              {new Date(post.date).toLocaleDateString(locale)}
             </time>
           </div>
         ) : (
           <div className="date">
-            <time>{new Date(post.date).toLocaleDateString("tr-TR")}</time>
+            <time>{new Date(post.date).toLocaleDateString(locale)}</time>
           </div>
         )}
 
@@ -212,22 +213,21 @@ export async function PostContent(post: Post) {
       <header>
         <h1>{post.title}</h1>
         {post.last_visit &&
-        new Date(post.last_visit).toLocaleDateString("tr-TR") !==
-          new Date(post.date).toLocaleDateString("tr-TR") ? (
+        new Date(post.last_visit).toLocaleDateString(locale) !==
+          new Date(post.date).toLocaleDateString(locale) ? (
           <div className="date">
             <time>
-              Last visit:{" "}
-              {new Date(post.last_visit).toLocaleDateString("tr-TR")}
+              Last visit: {new Date(post.last_visit).toLocaleDateString(locale)}
             </time>{" "}
             <br />
             <time>
               First time visited:{" "}
-              {new Date(post.date).toLocaleDateString("tr-TR")}
+              {new Date(post.date).toLocaleDateString(locale)}
             </time>
           </div>
         ) : (
           <div className="date">
-            <time>{new Date(post.date).toLocaleDateString("tr-TR")}</time>
+            <time>{new Date(post.date).toLocaleDateString(locale)}</time>
           </div>
         )}
       </header>
