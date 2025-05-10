@@ -4,13 +4,11 @@ code {
 	font-family: monospace, system-ui;
 }
 
-div.highlight {
-	overflow: auto;
-	background-color: var(--background-second);
-}
-
-pre.highlight {
-	padding: 10px 15px;
+pre {
+    overflow: auto;
+    background-color: var(--background-second);
+    line-height: 1.25rem;
+    padding: 10px 15px;
 }
 
 .highlight pre { background-color: var(--background-second); }
