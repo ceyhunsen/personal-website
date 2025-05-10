@@ -202,9 +202,16 @@ export async function PostContent(post: Post) {
     <div>
       <header>
         <h1>{post.title}</h1>
-        <div className="date">
-          <time>{post.date}</time>
-        </div>
+        {post.last_visit && post.last_visit != post.date ? (
+          <div className="date">
+            <time>Last visit: {post.last_visit}</time> <br />
+            <time>First time visited: {post.date}</time>
+          </div>
+        ) : (
+          <div className="date">
+            <time>{post.date}</time>
+          </div>
+        )}
       </header>
 
       <article dangerouslySetInnerHTML={{ __html: htmlContent }}></article>
