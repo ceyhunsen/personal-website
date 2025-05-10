@@ -1,7 +1,5 @@
 /* Global element styles */
 
-@import url("code.css");
-
 :root {
 	/* Colors. */
 	--background-first: rgb(0, 0, 0);
@@ -98,6 +96,15 @@ article figure figcaption {
     display: block;
     text-align: center;
     font-style: italic;
+}
+
+code {
+    font-family: monospace, system-ui;
+}
+
+pre {
+    overflow: auto;
+    line-height: 1.25rem;
 }
 
 /* Responsive iframe with 100% width. */
