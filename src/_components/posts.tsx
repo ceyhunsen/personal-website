@@ -22,6 +22,7 @@ import { visit } from "unist-util-visit";
  * @argument title Display title of the post.
  * @argument description [Optional] Short description of the post.
  * @argument date Release date of the post.
+ * @argument date Last visit date for travel logs.
  * @argument category Category of the post.
  * @argument cover [Optional] Cover image of the post.
  * @argument tags [Optional] Tags of the post.
@@ -32,6 +33,7 @@ export interface Post {
   title: string;
 
   date: string;
+  last_visit?: string;
   category: string;
   description?: string;
 
@@ -95,7 +97,13 @@ export function getAllPostsByCategory(category: string): Post[] {
   // Read all the posts and sort them by date in descending order.
   return postNames
     .map((postName) => getPostByCategory(category, postName))
-    .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
+    .sort((post1, post2) => {
+      if (category === "travel-logs" && post1.last_visit && post2.last_visit) {
+        return post1.last_visit > post2.last_visit ? -1 : 1;
+      } else {
+        return post1.date > post2.date ? -1 : 1;
+      }
+    });
 }
 
 /**

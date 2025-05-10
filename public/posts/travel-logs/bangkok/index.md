@@ -3,7 +3,7 @@ title: Bangkok
 date: 2024/11/02
 cover: skyscrapers/20241115_171924.jpg
 tags: ["trip"]
-last-visit: 2024-11-02
+last_visit: 2024/11/02
 ---
 
 I went to Bangkok as a part of a work trip and stayed there for 2 weeks. As the
@@ -17,7 +17,7 @@ made an edit of them and I suggest you watching it before continuing.
 
 My first impression of the city was is how well organized it was. Even though
 there are lots of cars and motorcycles on the streets, traffic jams were getting
-untagled sooner or later. To a person who lives in Istanbul, this was definitely
+untangled sooner or later. To a person who lives in Istanbul, this was definitely
 a breeze.
 
 Also another thing I noticed about traffic was that, most of the vehicles were
@@ -26,11 +26,11 @@ work with mobile apps. Almost all of the 2 weeks I used taxis for transportation
 and rarely been a passenger for a regular looking taxi. Most of them were normal
 people with their own personal cars. This was kind of interesting.
 
-Last thing about streets is there weren't much of pedastrians to be speak of. I
-and my colleagues were the only pedastrians walking on sidewalks on those busy
+Last thing about streets is there weren't much of pedestrians to be speak of. I
+and my colleagues were the only pedestrians walking on sidewalks on those busy
 streets, most of time. I don't know if we were almost always hung out on
-turistic areas or people of Bangkok don't really walks. Still, it sometimes felt
-like I was in a ghost town with so many cars around.
+touristic areas or people of Bangkok don't really walks. Still, it sometimes
+felt like I was in a ghost town with so many cars around.
 
 ![My first picture of the streets of Bangkok](/posts/travel-logs/bangkok/20241102_224023.jpg)
 
@@ -64,8 +64,8 @@ day suggested to go here, I wouldn't be visiting any temple.
 
 ![](/posts/travel-logs/bangkok/wat_pho/20241103_175451.jpg)
 
-Wat Pho is famous for the Reclining Budha statue. I am not ashamed to admit that
-we had some trouble finding the statue; We did go round and round multiple
+Wat Pho is famous for the Reclining Buddha statue. I am not ashamed to admit
+that we had some trouble finding the statue; We did go round and round multiple
 times. And the thing that wasn't obvious to me at first was that the statue, is
 in a building and is very, very long.
 
@@ -81,7 +81,7 @@ things are most impressive about them.
 
 There were, so-called "rooftop parties" on some of those skyscrapers. I was
 really keen to take a look at some of those views. But was very tired, when my
-colleageus has decided one night to go one of them. So, I decided not to go,
+colleagues has decided one night to go one of them. So, I decided not to go,
 shame.
 
 ![](/posts/travel-logs/bangkok/skyscrapers/20241103_134533.jpg)
@@ -102,7 +102,7 @@ shame.
 
 People of Bangkok was quite unstressful and welcoming. This was a bit surprising
 for me because I live in a similar city (as in size and chaos) and people here
-are extremely stressful. But can't say turkish people are not welcoming; We are
+are extremely stressful. But can't say Turkish people are not welcoming; We are
 also hospitable.
 
 I am a picky eater and the food was not for my taste, honestly. But had an
