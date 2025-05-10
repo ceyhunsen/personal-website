@@ -6,7 +6,7 @@ tags: ["spot"]
 last_visit: 2025/01/05
 ---
 
-Rotasız Gezgin Koyu (English translation: Routeless Traveller Bay), located in
+Rotasız Gezgin Koyu (English translation: Routeless Traveler Bay), located in
 Sarıyer/İstanbul, is a remote bay to chill out. It is at the very north-east
 of the European Side.
 

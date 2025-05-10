@@ -156,9 +156,16 @@ export function PostBox({ post }: { post: Post }) {
 
         <h2 className="title">{post.title}</h2>
 
-        <div className="date">
-          <time>{post.date}</time>
-        </div>
+        {post.last_visit && post.last_visit != post.date ? (
+          <div className="date">
+            <time>Last visit: {post.last_visit}</time> <br />
+            <time>First time visited: {post.date}</time>
+          </div>
+        ) : (
+          <div className="date">
+            <time>{post.date}</time>
+          </div>
+        )}
 
         {post.tags &&
           post.tags.map((tag) => {
