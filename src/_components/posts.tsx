@@ -14,6 +14,8 @@ import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";
 import { unified } from "unified";
 import { visit } from "unist-util-visit";
+import rehypeHighlight from "rehype-highlight";
+import "highlight.js/styles/github-dark.css";
 
 const locale = "tr-TR";
 
@@ -203,6 +205,7 @@ export async function PostContent(post: Post) {
   const processedContent = await unified()
     .use(remarkParse)
     .use(remarkRehype)
+    .use(rehypeHighlight)
     .use(rehypeStringify)
     .use(transformImageToImageWithCaption)
     .process(post.content);
