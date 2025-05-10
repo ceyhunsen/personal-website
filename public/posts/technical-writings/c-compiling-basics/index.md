@@ -1,7 +1,7 @@
 ---
 title: C Compiling Basics
 description: A basic introduction to compiling C programs
-date: 2023/01/16
+date: 2023-01-16
 ---
 
 Compiling a C program is a bit confusing for newbies since it doesn't have a

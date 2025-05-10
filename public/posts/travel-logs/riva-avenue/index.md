@@ -1,9 +1,9 @@
 ---
 title: Riva Avenue
-date: 2024/04/12
+date: 2024-04-12
 cover: 20241012_140446.jpg
 tags: ["route", "spot"]
-last_visit: 2024/12/14
+last_visit: 2024-12-14
 been-here: countless
 ---
 

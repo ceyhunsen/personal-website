@@ -1,9 +1,9 @@
 ---
 title: Bangkok
-date: 2024/11/02
+date: 2024-11-02
 cover: skyscrapers/20241115_171924.jpg
 tags: ["trip"]
-last_visit: 2024/11/02
+last_visit: 2024-11-02
 ---
 
 I went to Bangkok as a part of a work trip and stayed there for 2 weeks. As the

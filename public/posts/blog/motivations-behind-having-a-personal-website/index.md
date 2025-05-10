@@ -1,6 +1,6 @@
 ---
 title: Motivations Behind Having a Personal Website
-date: 2024/09/15
+date: 2024-09-15
 ---
 
 Back when I was in college, I wanted to have a personal website. The reason was understandable: Having a portfolio to show employers when applying for a job. With a summary of my projects and a single technical blog post, not sure creating this website helped me to get any offers that I received.
