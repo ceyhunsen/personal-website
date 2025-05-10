@@ -156,7 +156,7 @@ export function PostBox({ post }: { post: Post }) {
 
         <h2 className="title">{post.title}</h2>
 
-        {post.last_visit && post.last_visit != post.date ? (
+        {post.last_visit && post.last_visit !== post.date ? (
           <div className="date">
             <time>Last visit: {post.last_visit}</time> <br />
             <time>First time visited: {post.date}</time>
