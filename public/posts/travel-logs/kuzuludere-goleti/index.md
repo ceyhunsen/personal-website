@@ -1,9 +1,9 @@
 ---
 title: Kuzuludere Göleti (Pond)
-date: 2024/09/29
+date: 2024-09-29
 cover: 20240929_153503.jpg
 tags: ["spot"]
-last_visit: 2024/09/29
+last_visit: 2024-09-29
 ---
 
 Kuzuludere Göleti (pond) was quite the stunner for me. It is located at Yalıköy
