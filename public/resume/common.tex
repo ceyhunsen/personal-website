@@ -1,0 +1,101 @@
+% Common LaTeX commands for Ceyhun Şen's resume.
+
+% PDF credentials setup.
+\hypersetup
+{
+	pdftitle={Ceyhun Şen Resume},
+	pdfauthor={Ceyhun Şen}
+}
+
+% Set language of the document.
+\RequirePackage[english]{babel}
+
+% This box creates a section for main header and contact information.
+% #1: Name
+% #2: E-mail
+% #3: LinkedIn
+% #4: GitHub
+\newcommand
+{\contactbox}[4]%
+{%
+	{\Huge{#1}}\\%
+	{\faEnvelope} \href{mailto:#2}{#2} | %
+	{\faLinkedin} \href{https://www.#3}{#3} | %
+	{\faGithub} \href{https://www.#4}{#4}
+}
+
+% This box creates a section for a work experience.
+% #1: Company name
+% #2: Company details
+% #3: Positions
+% #4: Skills
+% #5: Detailed explanation
+\newcommand
+{\experiencebox}[5]
+{%
+	\begin{multicols}{2}
+		\subsection*{#1}%
+		\textbf{#2}\\%
+		\textit{#3}\\%
+		\textbf{Skills: }\textit{#4}%
+		\vfill
+		\columnbreak%
+		\textit{#5}
+	\end{multicols}
+}
+
+% This box creates a section for a education experience.
+% #1: School name
+% #2: School details
+% #3: Attended year
+% #4: Major and grade
+\newcommand
+{\educationbox}[4]
+{%
+	\begin{multicols}{2}
+		\subsection*{#1}%
+		{#2}%
+		\vfill
+		\columnbreak
+		{#3}\\%
+		{#4}\\%
+	\end{multicols}
+}
+
+% This box creates a section for a project.
+% #1: Name
+% #2: Link
+% #3: Details
+\newcommand
+{\projectbox}[3]
+{%
+	\begin{multicols}{2}
+		\subsection*{#1}
+		{#2}
+		\vfill
+		\columnbreak
+		{#3}
+	\end{multicols}
+}
+
+% This box creates a section for a competition.
+% #1: Name
+% #2: Link
+% #3: Details
+\newcommand
+{\competitionbox}[4]
+{%
+	\subsection*{#1}
+	\subsubsection*{#2}
+	{#3}
+}
+
+% This box creates a section for skills.
+% #1: Name
+% #2: Details
+\newcommand
+{\skillbox}[2]
+{%
+	\subsection*{#1}
+	{#2}
+}
