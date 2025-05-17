@@ -1,10 +1,18 @@
 # Ceyhun Şen's Resume
 
-This directory includes my resume.
+This directory includes my resume. It's written in latex.
 
-It's written in latex. It is designed to be compiled with `xelatex`.
+## Prerequisites
 
-## Necessary Packages
+Packages needed to compile this document:
+
+- `texlive`
+- `xelatex`
+- `latexmk`
+- Roboto fonts
+- [Optional] `make`
+
+### Install Packages
 
 Ubuntu:
 
