@@ -38,3 +38,12 @@ jobs:
         run: npm install -g depcheck
       - name: Check for unused dependencies
         run: npx --no-install depcheck --ignores @types/react
+
+  compile-resume:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Compile resume
+        uses: ./.github/actions/compile-resume

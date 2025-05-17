@@ -1,0 +1,142 @@
+% Ceyhun Şen's Resume
+
+% Use custom CLS file.
+\documentclass[10pt]{brutalist}
+
+% Initials.
+\title{Ceyhun Şen Resume}
+\author{Ceyhun Şen}
+\date{\today}
+
+\input{common.tex}
+
+% Main content -----------------------------------------------------------------
+\begin{document}
+
+\contactbox
+{Ceyhun Şen}
+{ceyhuusen@gmail.com}
+{linkedin.com/in/ceyhun-sen}
+{github.com/ceyhunsen}
+
+% ------------------------------------------------------------------------------
+% Work -------------------------------------------------------------------------
+% ------------------------------------------------------------------------------
+\section*{Work Experience}
+
+\experiencebox
+{Chainway Labs}
+{
+	\href{https://chainway.xyz/}{chainway.xyz} - %
+	İstanbul / Türkiye
+}
+{
+	Software Engineer | 03.24 - Today
+}
+{Rust, Bitcoin, RISC-V Assembly, Low Level Software}
+{I work on a state-of-the-art Bitcoin bridge, called Clementine. This work involves developing a high performing software, that is written in Rust. I also worked on a transpiler, which converted RISC-V assembly language to a virtual machine (BitVM).}
+
+\experiencebox
+{Inventron Electronics And Software}
+{
+	\href{https://inventron.com.tr/wp/tr}{inventron.com.tr/wp/tr} - %
+	İstanbul / Türkiye
+}
+{
+	Embedded Software Engineer | 09.23 - 03.24\\%
+	Part-time Embedded Software Engineer | 02.23 - 08.23\\%
+	Embedded Software Intern | 08.22 - 01.23
+}
+{C, C++, Linux Kernel, U-Boot Bootloader, Yocto Project, Android (kernel and distribution side)}
+{I worked on both Linux kernel drivers and board support package development for NXP i.MX based microprocessors and custom SOC's. This work involves writing new or updating existing device drivers/functionalities for various chips and peripherals. All to provide BSP's to complex SOM's and SOC's.}
+
+\experiencebox
+{Enterans}
+{Bursa / Türkiye}
+{
+	Part-time Embedded Software Engineer | 03.2022 - 06.2022
+}
+{C, STM32, ESP8286}
+{I worked on writing platform independent peripheral drivers for various microcontrollers in C. Drivers I wrote, used on different microcontrollers.}
+
+% ------------------------------------------------------------------------------
+% Education --------------------------------------------------------------------
+% ------------------------------------------------------------------------------
+\section*{Education}
+
+\begin{itemize}
+	\item Bursa Technical University | 08.19 - 08.23 | Computer Engineering Major | GPA: 2.89
+	\item Haydarpaşa High School | 09.15 - 06.19
+	\item Middle School Mathematical Olympiads | 09.12 - 06.14
+\end{itemize}
+
+% ------------------------------------------------------------------------------
+% Projects ---------------------------------------------------------------------
+% ------------------------------------------------------------------------------
+\section*{Projects}
+
+\projectbox
+{ATmega328P HAL Driver}
+{https://github.com/ceyhunsen/ATmega328P-HAL-Driver}
+{
+	Hardware abstraction layer driver for ATMega328P microcontroller. Written in C. Includes documentation (Doxygen), unit and integration tests. Tests have a mock interface which can act like real hardware.
+}
+
+\projectbox
+{MPU-925X Sensor Driver}
+{\href{https://github.com/ceyhunsen/mpu925x-driver}{github.com/ceyhunsen/mpu925x-driver}}
+{
+	Platform independent driver for MPU-9250 and MPU-9255 IMU sensors. Written in C. Includes documentation (Doxygen), unit and integration tests. Tests have a mock interface which can act like real hardware.
+}
+
+\projectbox
+{BMP180 STM32 Sensor Driver}
+{\href{https://github.com/ceyhunsen/bmp180-stm32-driver}{github.com/ceyhunsen/bmp180-stm32-driver}}
+{
+	Targeted specifically for STM32 microcontrollers and uses STM32 HAL drivers. Written in C.
+}
+
+% Skills -----------------------------------------------------------------------
+\section*{Skills}
+
+\begin{multicols}{2}
+\skillbox
+{Main Skills}
+{
+\begin{itemize}
+	\item Software development with low level languages like C, C++ and Rust
+	\item Embedded software development
+	\item Linux driver development
+	\item Designing software architecture and writing comprehensive documentation
+\end{itemize}
+}
+
+\skillbox
+{Languages}
+{
+\begin{itemize}
+	\item Turkish | Native
+	\item English | Professional working proficiency
+\end{itemize}
+}
+
+\skillbox
+{Programming Languages}
+{C, C++, Rust, Python, Bash, Javascript, CSS, HTML, Java, C\#, \LaTeX}
+
+\skillbox
+{Code Libraries And Frameworks}
+{Linux driver stack, Rust Tokio, U-Boot driver model, STM32 HAL Drivers, React Native, Jekyll}
+
+\skillbox{Technologies And Platforms}
+{Linux Kernel, Bitcoin, Git, GCC, Makefile/CMake, NXP i.MX ARM microprocessors, STM32 microcontrollers, AVR ATMega microcontrollers, Arduino, Inkscape}
+\end{multicols}
+
+% ------------------------------------------------------------------------------
+% End --------------------------------------------------------------------------
+% ------------------------------------------------------------------------------
+% Skip to the right end side of the page.
+\vfill\null
+\hfill\null\footnotesize This document is created/updated at \today.
+
+\end{document}
