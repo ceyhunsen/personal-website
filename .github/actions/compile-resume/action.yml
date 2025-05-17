@@ -1,5 +1,5 @@
-name: Build Resume
-description: "Build the resume"
+name: Compile Resume
+description: "Compile the resume"
 
 runs:
   using: "composite"

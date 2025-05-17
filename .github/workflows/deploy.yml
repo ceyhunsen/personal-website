@@ -27,11 +27,10 @@ jobs:
         uses: ./.github/actions/build-prerequisites
       - name: Build website
         run: npx --no-install next build
-      - name: Build Resume
-        uses: ./.github/actions/build-resume
+      - name: Compile resume
+        uses: ./.github/actions/compile-resume
       - name: Move resume to build directory
-        run: |
-          cp public/resume/ceyhun_sen_resume.pdf out/assets/ceyhun_sen_resume.pdf
+        run: cp public/resume/ceyhun_sen_resume.pdf out/assets/ceyhun_sen_resume.pdf
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
