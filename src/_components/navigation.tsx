@@ -24,7 +24,7 @@ export default function navigationPane() {
       </div>
 
       <div>
-        <a id="resume" href="/assets/ceyhun_sen_resume.pdf" target="_blank">
+        <a id="resume" href="/ceyhun_sen_resume.pdf" target="_blank">
           Resume
         </a>
       </div>
