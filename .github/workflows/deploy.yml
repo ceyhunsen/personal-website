@@ -25,8 +25,13 @@ jobs:
         uses: actions/checkout@v4
       - name: Prerequisites
         uses: ./.github/actions/build-prerequisites
-      - name: Build with Next.js
+      - name: Build website
         run: npx --no-install next build
+      - name: Build Resume
+        uses: ./.github/actions/build-resume
+      - name: Move resume to build directory
+        run: |
+          cp public/resume/ceyhun_sen_resume.pdf out/assets/ceyhun_sen_resume.pdf
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

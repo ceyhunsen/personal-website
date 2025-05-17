@@ -11,7 +11,3 @@ runs:
         latexmk_use_xelatex: true
         working_directory: public/resume
         root_file: ceyhun_sen_resume.tex
-
-    # - name: Copy PDF to website
-    #   shell: bash
-    #   run: cp ceyhun_sen_resume.pdf ../../out/assets/ceyhun_sen_resume.pdf
