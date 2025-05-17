@@ -1,5 +1,6 @@
 # Makefile for generating the PDF file.
 
+.PHONY: all clean
 all:
 	latexmk -r latexmkrc
 
