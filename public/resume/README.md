@@ -1,6 +1,6 @@
 # Ceyhun Şen's Resume
 
-This directory includes my resume. It's written in latex.
+This directory includes my resume. It's written in LaTeX.
 
 ## Prerequisites
 
