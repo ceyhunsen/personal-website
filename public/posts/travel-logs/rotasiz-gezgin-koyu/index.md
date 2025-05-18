@@ -1,40 +1,43 @@
 ---
 title: Rotasız Gezgin Koyu
 date: 2024-07-25
-cover: 20240725_192340.jpg
+cover: 20240725_191733.jpg
 tags: ["spot"]
-last_visit: 2025-01-05
+last_visit: 2025-05-03
 ---
 
 Rotasız Gezgin Koyu (English translation: Routeless Traveler Bay), located in
-Sarıyer/İstanbul, is a remote bay to chill out. It is at the very north-east
-of the European Side.
+Sarıyer/İstanbul, is a remote bay located at the very north-east of the European
+Side. There are 2 hills beside the bay.
 
 I sometimes go here to chill out, after work. You can bring your own camping
 chair or sit on a rock to enjoy the view. There are also some small places to
-camp. But beware that there are strong winds coming from Black Sea.
+camp. But beware that there are strong winds coming from the Black Sea
+sometimes.
 
 ![Panoramic picture of the camping spaces](/posts/travel-logs/rotasiz-gezgin-koyu/20240801_200643.jpg)
 
-Sunset is not as spectacular as it should be: There is a hill that blocks the
-view. I got a feeling that sunrise should be better, though. Because east side
-has a more clear view. But never been there early in the morning so it's only my
+## First Hill
+
+There are two possible entries to the first part of hills and they are ending
+with two different places, which are not connected. Each of the entries are
+quite narrow. Be careful not to get yourself scratched by the bushes!
+
+![One of the entrances](/posts/travel-logs/rotasiz-gezgin-koyu/250105-rotasiz_gezgin_koyu_entrance.gif)
+
+Sunset is not as spectacular as it should be: Other hill blocks the view. I got
+a feeling that sunrise should be better, though. Because east side has a more
+clear view. But never been there early in the morning so it's only my
 assumption.
 
 ![Sunset at the bay](/posts/travel-logs/rotasiz-gezgin-koyu/20240801_200802.jpg)
 
 ![East side of the bay](/posts/travel-logs/rotasiz-gezgin-koyu/20240725_193257.jpg)
 
-There are two possible entries to the bay and they are ending with two different
-bays, which are not connected. Each of the entries are quite narrow. Be careful
-not to get yourself scratched by the bushes!
-
-![One of the entrances](/posts/travel-logs/rotasiz-gezgin-koyu/250105-rotasiz_gezgin_koyu_entrance.gif)
-
-First entry hosts the smaller part of the bay. Once you pass the narrow path,
-nice green view will welcome you. This part also has a small beach but sand is
-quite rough, though. I sometimes see people swimming in that beach and doing
-high dives from rocks inside the sea.
+First entry hosts the smaller part. Once you pass the narrow path, nice green
+view will welcome you. This part also has a small beach but sand is quite rough,
+though. I sometimes see people swimming in that beach and doing high dives from
+rocks inside the sea.
 
 ![Welcoming view](/posts/travel-logs/rotasiz-gezgin-koyu/20240725_191733.jpg)
 
@@ -52,6 +55,30 @@ cause catastrophic results.
 
 ![There are rocks to sit on and enjoy the view](/posts/travel-logs/rotasiz-gezgin-koyu/20240801_200117.jpg)
 
+## Second Hill
+
+Second hill is much more bigger than the first. Entrance was way more easier
+also. It has bigger rocks and bigger green areas.
+
+![One of the big green areas](/posts/travel-logs/rotasiz-gezgin-koyu/DSCF4154.JPG)
+
+Rock formations are gorgeous in this place. Colors are great, blends nicely with
+the sea and grows little nice flowers.
+
+![Birds resting on these rocks](/posts/travel-logs/rotasiz-gezgin-koyu/rotasiz_gezgin_koyu_birds.gif)
+
+![Little flower growing on rocks](/posts/travel-logs/rotasiz-gezgin-koyu/DSCF4145.JPG)
+
+It gets better, though. I saw another little bay between these rocks. It had
+vegetation inside the water and it was looking awesome.
+
+![Vegetation inside the water](/posts/travel-logs/rotasiz-gezgin-koyu/rotasiz_gezgin_koyu_wave.gif)
+
+The thing I didn't notice about this when I was there was that it also habitats
+some fishes.
+
+![Fishes swimming in these beautiful blue water](/posts/travel-logs/rotasiz-gezgin-koyu/DSCF4128.JPG)
+
 ## Where Is It
 
 It is located in Sarıyer/İstanbul Turkey. It is inside the Rumelifeneri Village.
@@ -64,16 +91,6 @@ in that beach, your choice.
 Exact coordinates are 41.238938396992964, 29.103902008727104 and Google maps
 link is
 [maps.app.goo.gl/xDqb7HtJQ7Aidqdv8](https://maps.app.goo.gl/xDqb7HtJQ7Aidqdv8).
-
-<!-- <div class="iframeWrapper">
-<iframe
-  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1500.112157146137!2d29.1038376!3d41.2386715!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x409fe7e27abb4c15%3A0x408e4ebfd43bed5b!2sRotas%C4%B1z%20Gezgin%20Koyu!5e0!3m2!1sen!2str!4v1736102180660!5m2!1sen!2str"
-  style="border:0;"
-  allowfullscreen=""
-  loading="lazy"
-  referrerpolicy="no-referrer-when-downgrade">
-</iframe>
-</div> -->
 
 There are some public busses that goes to Rumelifeneri Village and the village
 is the last stop. After that, 10 minute walk is needed. So, it is possible to go
