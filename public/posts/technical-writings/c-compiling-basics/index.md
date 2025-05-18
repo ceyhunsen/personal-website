@@ -11,7 +11,7 @@ But it isn't free. So, maybe worry a little?
 
 With lack of the central authority and the wide adoption of the language
 resulted community driven compilers/libraries to emerge. Meaning there is no
-so-called default compiler but community driven and hugely populer
+so-called default compiler but community driven and hugely popular
 compilers/libraries.
 
 This article tries to address what are `make`, `cmake`, `clang`, `gcc` or
@@ -53,21 +53,22 @@ software.
 
 As I said before, there is no official compiler. 2 of the most popular community
 driven and open source compilers are called `gcc` and `clang`. There are other
-open source and priprioraty compilers out there but these 2 will be the focus of
+open source and proprietary compilers out there but these 2 will be the focus of
 this article.
 
-They are completly different compilers and developed by completely different
+They are completely different compilers and developed by completely different
 teams. But they function the same and used the same for the developer. Examples
 will be based on `gcc` simply because I use that as my main C compiler.
 
-They follow the standards developed by international organizations like ISO[^1].
+They follow the standards developed by international organizations like
+[ISO](https://en.wikipedia.org/wiki/C_(programming_language)#ANSI_C_and_ISO_C).
 
 For bare-metal targets, you mostly will need another compiler for your target
 architecture. For example: You want to compile your code to ARM CPU's without
 an operating system, `arm-none-eabi-gcc` is the way to go. It's basically `gcc`
 but for the ARM architecture.
 
-There is another caveat for targetting bare metal environments: Low level stuff
+There is another caveat for targeting bare metal environments: Low level stuff
 (like hardware interrupt handling) highly dependent on the compiler it's
 developed with. That's because C standard mostly independent from CPU
 architecture and compilers implement those architecture specific features
@@ -136,8 +137,9 @@ void calculate(int input)
 ```
 
 If we give all of the these files to compiler, some compilers will produce a
-binary. This is called implicit declaration and is not legal[^2] in C standard.
-GCC is some of the compilers that produces an output, with a warning:
+binary. This is called implicit declaration and is
+[not legal](https://stackoverflow.com/a/9182835/11719950) in C standard. GCC is
+some of the compilers that produces an output, with a warning:
 
 ```bash
 $ gcc main.c input.c calculate.c
@@ -191,7 +193,7 @@ int main()
 }
 ```
 
-There are no warnings anymore and is compilant with the standard.
+There are no warnings anymore and is compliant with the standard.
 
 In a real world scenario, you might see a weird stuff in header files, that
 looks like `#ifndef _INPUT_H`. This is a weird workaround for the language
@@ -295,13 +297,13 @@ There are some stories I want to tell about compiling C programs:
 
 Back in the day, I tried to install `gcc` to my friend's Windows laptop,
 needless to say it was painful. Firstly, `gcc` is not natively supported on
-Windows. So some other guys ported `gcc` to Windows and called it MinGW[^3]. If
-you search it on the internet, you will most likely see SourceForge links at the
-top of the page. What? I get that there was no official C website but this was
-too much. At least put the binaries in Github or something. When I first
-visited that site, I thought it was a virus site and left. After some searching,
-I gave up and downloaded it from there. Luckily, it was not a virus. But the
-torture was not yet to over.
+Windows. So some other guys ported `gcc` to Windows and called it
+[MinGW](https://en.wikipedia.org/wiki/MinGW). If you search it on the internet,
+you will most likely see SourceForge links at the top of the page. What? I get
+that there was no official C website but this was too much. At least put the
+binaries in GitHub or something. When I first visited that site, I thought it
+was a virus site and left. After some searching, I gave up and downloaded it
+from there. Luckily, it was not a virus. But the torture was not yet to over.
 
 I won't tell more about this. If you are a freshman, have fun spending the rest
 of your day figuring out how to install the thing properly. Fortunately, there
@@ -338,9 +340,3 @@ C is everywhere and the whole world probably collapse without it. If we need to
 use those important software, first we need to compile them. Fortunately, not
 all people nor developers need to compile a C program. For those who need to
 compile one or worse write a compiling instruction, good luck.
-
-## Sources
-
-[^1]: [https://en.wikipedia.org/wiki/C_(programming_language)#ANSI_C_and_ISO_C](https://en.wikipedia.org/wiki/C_(programming_language)#ANSI_C_and_ISO_C)
-[^2]: [https://stackoverflow.com/a/9182835/11719950)](https://stackoverflow.com/a/9182835/11719950))
-[^3]: [https://en.wikipedia.org/wiki/MinGW](https://en.wikipedia.org/wiki/MinGW)
