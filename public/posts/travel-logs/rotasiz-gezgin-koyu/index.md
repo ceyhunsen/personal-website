@@ -8,7 +8,7 @@ last_visit: 2025-05-03
 
 Rotasız Gezgin Koyu (English translation: Routeless Traveler Bay), located in
 Sarıyer/İstanbul, is a remote bay located at the very north-east of the European
-Side. It has 2 hills beside the hill.
+Side. There are 2 hills beside the bay.
 
 I sometimes go here to chill out, after work. You can bring your own camping
 chair or sit on a rock to enjoy the view. There are also some small places to
