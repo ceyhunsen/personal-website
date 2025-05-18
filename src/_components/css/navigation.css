@@ -26,11 +26,16 @@ nav #logo {
 }
 
 nav #resume {
-	color: var(--font-second);
+	color: var(--font-first);
 	text-decoration: none;
 	font-size: x-large;
 }
 nav #resume:hover {
 	color: var(--font-first);
+	text-decoration: underline;
+}
+
+nav .about-contact {
+	color: var(--font-second);
 	text-decoration: underline;
 }
