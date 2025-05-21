@@ -16,7 +16,8 @@ import { unified } from "unified";
 import { visit } from "unist-util-visit";
 import rehypeHighlight from "rehype-highlight";
 import "highlight.js/styles/github-dark.css";
-
+import sharp from "sharp";
+import Image from "next/image";
 const locale = "tr-TR";
 
 /**
@@ -141,21 +142,49 @@ export function ListPostsByCategory({
 }
 
 /**
+ * Get the dimensions of an image file
+ */
+async function getImageDimensions(category: string, name: string, cover: string) {
+  try {
+    const imagePath = join(process.cwd(), 'public', 'posts', category, name, cover);
+    const metadata = await sharp(imagePath).metadata();
+    return {
+      width: metadata.width || 800,
+      height: metadata.height || 600
+    };
+  } catch (error) {
+    console.error('Error getting image dimensions:', error);
+    return { width: 800, height: 600 };
+  }
+}
+
+/**
  * @description Component for displaying a single post.
  *
  * @param post Post metadata.
  *
  * @returns Post box with metadata.
  */
-export function PostBox({ post }: { post: Post }) {
+export async function PostBox({ post }: { post: Post }) {
+  let dimensions = { width: 800, height: 600 };
+  
+  if (post.cover) {
+    dimensions = await getImageDimensions(post.category, post.name, post.cover);
+  }
+
   return (
     <div className="box">
       <a href={"/" + post.category + "/" + post.name}>
         {post.cover && (
-          <img
-            src={"/posts/" + post.category + "/" + post.name + "/" + post.cover}
-            alt={post.title}
-          />
+          <div className="post-image-container">
+            <Image
+              src={"/posts/" + post.category + "/" + post.name + "/" + post.cover}
+              alt={post.title}
+              width={dimensions.width}
+              height={dimensions.height}
+              style={{ width: '100%', height: 'auto' }}
+            />
+          </div>
         )}
 
         <h2 className="title">{post.title}</h2>

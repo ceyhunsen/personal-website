@@ -73,12 +73,15 @@ main img {
 
 /* Outline for the every page's content */
 div.page_outline {
-	width: var(--width);
+  width: 80%;
+  max-width: 1280px;
+
 }
 
 header {
 	width: var(--width);
 	text-align: center;
+	margin: 0 auto;
 }
 
 article figure {
