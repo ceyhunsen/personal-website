@@ -6,6 +6,7 @@ div.box {
 	border-color:var(--background-third);
 	margin-bottom: 1rem;
 	padding: 1rem;
+	
 }
 div.box:hover {
 	background-color: var(--background-third);
@@ -45,4 +46,30 @@ div.box div.tag_box {
 	background-color: var(--background-second);
 	color: var(--font-second);
 	width: auto;
+}
+
+
+.post-cover-image {
+  display: block;
+  margin: 1rem 0;
+  border-radius: 8px;
+}
+
+.post-image-container {
+  width: 100%;
+  margin: 1rem auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.post-image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.2s ease-in-out;
+}
+
+.post-image-container:hover img {
+  transform: scale(1.05);
 }
