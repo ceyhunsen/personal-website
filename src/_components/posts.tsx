@@ -153,6 +153,7 @@ async function getImageDimensions(category: string, name: string, cover: string)
       height: metadata.height || 600
     };
   } catch (error) {
+    console.error('Error getting image dimensions:', error);
     return { width: 800, height: 600 };
   }
 }
